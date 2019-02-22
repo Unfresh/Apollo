@@ -1,0 +1,145 @@
+.tariff {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    @media (min-width:768px) {
+        padding-bottom: 100px;
+    }
+    
+    @media (min-width:1200px) {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+}
+
+h1.tariff-title {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: -0.76px;
+    
+    @media (min-width:1200px) {
+        font-size: 38px;
+        line-height: 26px;
+    }
+}
+
+p.tariff-text {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #777777;
+    
+    @media (min-width:1200px) {
+        margin-top: 30px;
+        margin-bottom: 55px;
+    }
+}
+
+.card {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+    margin-bottom: 40px;
+    
+    @media (min-width:768px) {
+       margin-bottom: 0; 
+    }
+}
+
+.card__title {
+    font-size: 12px;
+    color: #242526;
+    text-transform: uppercase;
+}
+
+.card__price {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-top: 25px;
+    
+    &::after {
+        content: "c";
+        font-family: 'als_rublregular';
+    }
+}
+
+.card p {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+}
+
+.card__menu {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card__menu li {
+    margin: 0;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 30px;
+    
+    &::before {
+        color: #7cd184;
+        content: " ";
+        width: 12px;
+        height: 10px;
+        background-image: url(../img/1200px/ok.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.card__button {
+    display: inline-block;
+    border-radius: 40px;
+    background-color: #252525;
+    box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 4);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.12px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #ffc80a;
+    }
+}
+
+.card__button--orange {
+    background-color: #ffc80a;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    &:hover {
+        background-color: #faea27;
+    }
+    
+}
+
+.cancel {
+    margin-bottom: 0;
+}

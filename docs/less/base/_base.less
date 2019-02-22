@@ -1,0 +1,165 @@
+html, body {
+    font-family: 'Noto Sans';
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+* {box-sizing: border-box;}
+
+.block {
+    background-color: rgb(232, 232, 101);
+    padding: 20px;
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;  
+    box-shadow: 0px 5px 10px 0px rgba(42, 73, 109, 1);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    @media(min-width:992px) {
+        background-color: #38383a;
+        position: static;
+    }
+    
+}
+
+.container--mobile--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    
+    @media (min-width:992px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width:970px;
+    }
+    
+    @media (min-width:1200px) {width: 1170px;}
+}
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    @media (min-width:1200px) {
+        padding-top: 60px;
+        padding-bottom: 70px; 
+    }
+}
+
+.tariff {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    @media (min-width:768px) {
+        padding-bottom: 100px;
+    }
+    
+    @media (min-width:1200px) {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+}
+
+.line {
+    background-color: #eaeff5;
+    height: 1px;
+}
+
+.footer {
+    background-color: #252525;
+}
+
+.navigation-button {
+    display: block;
+    background-color: #38383a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 3.92px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:after {
+        background-image: url(../img/1200px/navigation-icon.png);
+        background-repeat: no-repeat;
+        content: "";
+        width: 25px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        cursor: pointer;
+    }
+    
+    &:focus, &:active {background-color: #16385f;}
+    
+    @media (min-width:992px) {display: none;}
+}
+
+.navigation-button--active {background-color: #16385f;}
+
+a.arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/1200px/arrow-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.number-1:before {
+    content: "1";
+    top: -8px;
+    
+    @media (min-width:768px) {
+       top: -40px; 
+    }
+}
+
+.number-2:before {
+    content: "2";
+    top: -16px;
+}
+
+.number-1:before, .number-2:before {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    padding-top: 7px;
+    padding-left: 8px;
+    line-height: 13px;
+    background-color: #ffc80a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 2px;
+    
+    @media (min-width:1200px) {
+        left: -16px;
+        top: -0px;
+    }
+}

@@ -1,0 +1,201 @@
+.logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 110px;
+    padding-bottom: 31px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    
+    @media (min-width: 992px) {
+        padding-top: 50px;
+    }
+
+    .logo__name {
+        color: #000;
+        font-size: 33px;
+        line-height: 23px;
+        letter-spacing: 8.25px;
+
+        @media (min-width: 768px) {
+            font-size: 38px;
+            letter-spacing: 9.5px;
+        }
+    }
+
+    .logo__slogan {
+        color: #a1bbd9;
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 5px;
+        letter-spacing: 9.1px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 32px;
+            margin-top: 7px;
+            letter-spacing: 10.4px;
+        }
+    }
+}
+
+.menu {
+    background-color: #35577d;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #466a92;
+    }
+
+    a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-top: 23px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        letter-spacing: 3.92px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:active,
+        &:hover {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .menu {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        list-style-type: none;
+        display: block;
+        background-color: #38383a;
+
+        li {
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 35px;
+            border-bottom: none;
+        }
+
+        a {
+            color: #fff;
+            line-height: 26px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 3.92px;
+            padding: 0;
+            padding-top: 23px;
+            padding-bottom: 20px;
+
+            &:active,
+            &:hover {
+                background-color: #38383a;
+                text-decoration: none;
+                color: #ffcc00;
+            }
+        }
+    }
+    .menu li:last-child {margin-right: 0;}
+}
+
+@media (min-width:1200px) {
+    .menu {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        list-style-type: none;
+        display: block;
+        background-color: #38383a;
+
+        li {
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 75px;
+            border-bottom: none;
+        }
+
+        a {
+            color: #fff;
+            line-height: 26px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 3.92px;
+            padding: 0;
+            padding-top: 23px;
+            padding-bottom: 20px;
+
+            &:active,
+            &:hover {
+                background-color: #38383a;
+                text-decoration: none;
+                color: #ffcc00;
+            }
+        }
+    }
+
+    .menu li:last-child {margin-right: 0;}
+}
+
+.slider {
+    background-image: url(../img/1200px/slider-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 135px;
+    box-shadow: 0px 3px 25px 0px rgb(104, 138, 179, 1);
+    position: relative;
+}
+
+h2.slider__title {
+    font-size: 28px;
+    line-height: 38px;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0,64px;
+    
+    @media (min-width:992px) {
+        font-size: 32px;
+        line-height: 42px;
+    }   
+}
+
+p.slider__slogan {
+    font-size: 18px;
+    color: #cddfe0;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Noto Serif';
+    
+    @media (min-width:992px) {
+        font-size: 22px;
+        line-height: 32px; 
+    }   
+}
+
+
+
